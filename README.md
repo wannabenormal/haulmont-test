@@ -14,11 +14,15 @@ export DEBUG=True or False
 export ALLOWED_HOSTS='ALLOWED HOSTS'
 export TIME_ZONE = 'YOUR TIMEZONE'
 ```
-5. Create a superuser with:
+5. Migrate database with:
+```
+python manage.py migrate
+```
+6. Create a superuser with:
 ```
 python manage.py create superuser
 ```
-6. Run local server:
+7. Run local server:
 ```
 python manage.py runserver
 ```
