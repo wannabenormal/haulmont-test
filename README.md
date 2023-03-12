@@ -7,11 +7,18 @@
 ```
 pip install -r requirements.txt
 ```
-4. Create a superuser with:
+4. Create `.env` file in root directory with content:
+```
+export SECRET_KEY='DJANGO_SECRET_KEY'
+export DEBUG=True or False
+export ALLOWED_HOSTS='ALLOWED HOSTS'
+export TIME_ZONE = 'YOUR TIMEZONE'
+```
+5. Create a superuser with:
 ```
 python manage.py create superuser
 ```
-5. Run local server:
+6. Run local server:
 ```
 python manage.py runserver
 ```
